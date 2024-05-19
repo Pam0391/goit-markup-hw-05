@@ -737,13 +737,13 @@ a:focus{
     color: var(--white);
   }
 
-  /*Style pentru modal*/
+  /* Style pentru modal */
   .is-hidden {
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
   }
-
+    
   [data-modal] {
     height: 100%;
     width: 100%;
@@ -752,11 +752,7 @@ a:focus{
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
-}
-
-.is-hidden [data-modal-content] {
-    transform: translate(-50%,-50%) scale(0.5);
-}
+  }
 
   [data-modal-content] {
     width: 528px;
@@ -765,166 +761,12 @@ a:focus{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(1);
-    padding: 40px 40px;
-    transition-duration: 1s;
-    box-shadow: var(--light-shadow);
-    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
   }
 
   [data-modal-close] {
     position: absolute;
-    font-size: 18px;
-    top: 14px;
-    right: 14px;
-    padding: 3px 8px;
-    border: 0.2px solid var(--lightgray);
-    border-radius: 100%;
+    right: 10px;
+    top:10px;
   }
-
-.modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    text-align: center;
-    line-height: 22.44px;
-    letter-spacing: 0.03em;
-}
-
-.modal-form {
-    padding: 12px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.modal-form__position {
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: var(--modal-color);
-    position: relative;
-}
-
-.modal-form__position svg {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    top: 26px;
-    left: 7px;
-}
-
-.modal-form__input[type="checkbox"] {
-    display: none;
-}
-
-.modal-form__input[type="checkbox"]:checked + .replace-checkbox {
-    background-color: var(--blue);
-    border-color: var(--blue);
-}
-
-.modal-checkbox__position svg {
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    top: -2px;
-    left: -2px;
-    display: none;
-    fill: var(--white);
-}
-
-.modal-form__input[type="checkbox"]:checked + .modal-checkbox__position svg{
-    display: block;
-}
-
-.modal-checkbox__position {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border: 1.5px solid var(--black);
-    border-radius: 2px;
-}
-
-.modal-form__position input:focus + svg,
-.modal-form__position input:hover + svg {        
-    fill: var(--blue);
-}
-
-.modal-form__position input {
-    padding-left: 30px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form__input {
-    outline: none;
-    margin-top: 4px;
-    border-radius: 4px;
-    height: 35px;
-    cursor: pointer;   
-    border: 1px solid var(--modal-border);
-    padding-left: 12px;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form__comments {
-    outline: none;
-    margin-top: 4px;
-    border-radius: 4px;
-    height: 120px;
-    cursor: pointer;   
-    border: 1px solid var(--modal-border);
-    padding-left: 12px;
-    padding-top: 5px;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form__input:hover,
-.modal-form__comments:hover,
-.modal-form__input:focus,
-.modal-form__comments:focus {
-    border-color: var(--blue);
-}
-
-.modal-form__checked {
-    flex-direction: row;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    gap: 10px;
-    justify-content: center;
-}
-
-.conditions {
-    color: var(--blue);
-    text-decoration: underline;
-    margin-left: -5px;
-}
-
-.modal-form__btn {
-    width: 200px;
-    height: 50px;
-    background-color: var(--blue);
-    box-shadow: 0px 4px 4px 0px var(--modal-form-btn);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    border-radius: 4px;
-    margin: 0 auto;
-}
