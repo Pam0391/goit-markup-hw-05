@@ -153,13 +153,13 @@ display: flex;
 
 button {
     transition-property: color, background-color, transform;
-    transition-duration: 250ms, 250ms, 250ms;
+    transition-duration: 350ms, 350ms, 350ms;
 }
 
 button:hover{
     color: var(--white);
     background-color: var(--blue);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 
@@ -738,7 +738,7 @@ a:focus{
   }
 
   /* Style pentru modal */
-  .is-hidden {
+   .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -763,6 +763,7 @@ a:focus{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
+
   }
 
   [data-modal-close] {
