@@ -751,8 +751,11 @@ a:focus{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 5;
   }
+
+.is-hidden [data-modal-content] {
+    transform: translate(-50%, -50%) scale(0,5);
+}
 
   [data-modal-content] {
     width: 528px;
@@ -761,9 +764,9 @@ a:focus{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); scale: (1);
+    transition-duration: 1s;
     padding: 20px;
-
   }
 
   [data-modal-close] {
